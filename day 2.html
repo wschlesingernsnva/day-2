@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hell</title>
+        <link rel="stylesheet" href="./day 2.css">
+    </head>
+    <body id="body">
+        <button class="hellButton" id="hellButton">wah</button>
+    </body>
+    <script>
+        const body = document.getElementById("body");
+        const hellButton = document.getElementById("hellButton");
+
+        hellButton.addEventListener("click", () => {
+            const kys = document.createElement("p");
+            kys.className = "kys";
+            
+            const kysNode = document.createTextNode("kys");
+            kys.appendChild(kysNode);
+
+            body.appendChild(kys);
+        });
+    </script>
+</html>
